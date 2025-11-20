@@ -29,7 +29,7 @@ const (
 type patchOperation struct {
 	Op    patchOperationType `json:"op"`
 	Path  string             `json:"path"`
-	Value any                `json:"value,omitempty"`
+	Value any                `json:"value"`
 }
 
 // PatchOperations represents the patch request.
